@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "round": "rodada_002",
+  "state": "CONCLUIDA",
+  "exit_code": 0,
+  "message": "Rodada concluída e auditada com sucesso.",
+  "updated_at_utc": "2026-07-14T13:42:16.003282+00:00",
+  "history": [
+    {
+      "state": "INICIADA",
+      "message": "Rodada criada.",
+      "at_utc": "2026-07-14T13:42:11.865577+00:00"
+    },
+    {
+      "state": "SELECIONANDO_ENTRADA",
+      "message": "Selecionando a base de entrada.",
+      "at_utc": "2026-07-14T13:42:11.887118+00:00"
+    },
+    {
+      "state": "COPIANDO_ENTRADA",
+      "message": "Copiando BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx para a rodada.",
+      "at_utc": "2026-07-14T13:42:11.888951+00:00"
+    },
+    {
+      "state": "VALIDANDO",
+      "message": "Validando a cópia da base para o módulo 52.",
+      "at_utc": "2026-07-14T13:42:11.898108+00:00"
+    },
+    {
+      "state": "RESOLVENDO",
+      "message": "Executando CP-SAT puro.",
+      "at_utc": "2026-07-14T13:42:12.170943+00:00"
+    },
+    {
+      "state": "AUDITANDO",
+      "message": "Auditando a solução produzida.",
+      "at_utc": "2026-07-14T13:42:15.541378+00:00"
+    },
+    {
+      "state": "GRAVANDO_ALOCACAO",
+      "message": "Publicando os resultados auditados.",
+      "at_utc": "2026-07-14T13:42:15.790064+00:00"
+    },
+    {
+      "state": "CONCLUIDA",
+      "message": "Rodada concluída e auditada com sucesso.",
+      "at_utc": "2026-07-14T13:42:16.003282+00:00",
+      "exit_code": 0
+    }
+  ]
+}

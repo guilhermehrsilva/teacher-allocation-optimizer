@@ -1,0 +1,13 @@
+{
+  "status": "APROVADO",
+  "checks": {
+    "transmissions": 402,
+    "teachers": 233,
+    "allocated": 368,
+    "unassigned": 34,
+    "used_teachers": 222,
+    "schedule_slots_checked": 368
+  },
+  "issue_count": 0,
+  "issues": []
+}

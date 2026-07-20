@@ -1,0 +1,198 @@
+{
+  "source": "BASES_TESTE\\BASE_SINTETICA_PERFIL_DOCENTE.xlsx",
+  "status": "REPROVADO",
+  "sheets": {
+    "MAPA PEDAGÓGICO": {
+      "rows": 990,
+      "columns": 23
+    },
+    "DOCENTES": {
+      "rows": 187,
+      "columns": 8
+    }
+  },
+  "summary": {
+    "issue_groups": 5,
+    "by_severity": {
+      "CRÍTICA": 0,
+      "ALTA": 4,
+      "MÉDIA": 1,
+      "BAIXA": 0
+    }
+  },
+  "assumptions": [
+    "O grão do MAPA PEDAGÓGICO é CURRÍCULO + COD_DISCIPLINA.",
+    "Perfis separados por vírgula são alternativas; basta uma interseção exata após normalizar caixa e espaços.",
+    "Somente docentes com STATUS=ATIVO estão disponíveis para cobertura.",
+    "Divergência ESTENDIDA entre ORDEM e METODOLOGIA é alerta até confirmação da regra de negócio."
+  ],
+  "issues": [
+    {
+      "severity": "ALTA",
+      "code": "CAMPO_OBRIGATORIO_VAZIO",
+      "sheet": "MAPA PEDAGÓGICO",
+      "column": "CURRÍCULO",
+      "message": "1 linha(s) sem valor obrigatório em CURRÍCULO.",
+      "count": 1,
+      "rows": [
+        546
+      ],
+      "details": {}
+    },
+    {
+      "severity": "ALTA",
+      "code": "OFERTA_SEM_HORARIO",
+      "sheet": "MAPA PEDAGÓGICO",
+      "column": "HORÁRIO",
+      "message": "Oferta com dia de aula definido, mas sem horário.",
+      "count": 1,
+      "rows": [
+        543
+      ],
+      "details": {}
+    },
+    {
+      "severity": "ALTA",
+      "code": "AULA_AO_VIVO_SEM_DIA",
+      "sheet": "MAPA PEDAGÓGICO",
+      "column": "DIA_AULA",
+      "message": "Oferta ao vivo sem dia utilizável para verificar choque de agenda.",
+      "count": 6,
+      "rows": [
+        180,
+        181,
+        423,
+        424,
+        443,
+        468
+      ],
+      "details": {}
+    },
+    {
+      "severity": "MÉDIA",
+      "code": "ORDEM_METODOLOGIA_DIVERGENTE",
+      "sheet": "MAPA PEDAGÓGICO",
+      "column": "METODOLOGIA",
+      "message": "ORDEM e METODOLOGIA divergem quanto à classificação ESTENDIDA; confirmar regra de negócio.",
+      "count": 19,
+      "rows": [
+        28,
+        81,
+        90,
+        123,
+        142,
+        173,
+        270,
+        295,
+        402,
+        505,
+        531,
+        543,
+        665,
+        762,
+        813,
+        843,
+        878,
+        908,
+        924
+      ],
+      "details": {}
+    },
+    {
+      "severity": "ALTA",
+      "code": "PERFIL_SEM_DOCENTE_ATIVO",
+      "sheet": "MAPA PEDAGÓGICO",
+      "column": "PERFIL_DISCIPLINA",
+      "message": "23 oferta(s), em 7 perfil(is), não possuem docente ativo compatível.",
+      "count": 23,
+      "rows": [
+        27,
+        125,
+        139,
+        141,
+        142,
+        265,
+        369,
+        458,
+        518,
+        526,
+        533,
+        717,
+        720,
+        776,
+        797,
+        801,
+        808,
+        812,
+        815,
+        824,
+        828,
+        883,
+        884
+      ],
+      "details": {
+        "profiles_without_active_teacher": [
+          {
+            "profile": "Comunicação - Relações Públicas - Teorias em Relações Públicas",
+            "rows": [
+              776
+            ]
+          },
+          {
+            "profile": "Design - Design Gráfico",
+            "rows": [
+              526,
+              533,
+              808,
+              815
+            ]
+          },
+          {
+            "profile": "Educação - Ciências Biológicas - Genética, Saúde - Ciências Biológicas",
+            "rows": [
+              125
+            ]
+          },
+          {
+            "profile": "Gestão - Gestão da Saúde Pública",
+            "rows": [
+              458
+            ]
+          },
+          {
+            "profile": "Saúde - Comuns",
+            "rows": [
+              265,
+              717,
+              720,
+              797,
+              801,
+              824,
+              828,
+              883,
+              884
+            ]
+          },
+          {
+            "profile": "Tecnologia - Desenvolvimento Mobile - Programação para Dispositivos",
+            "rows": [
+              27,
+              369,
+              812
+            ]
+          },
+          {
+            "profile": "Tecnologia - Processamento de Dados - Análise de Dados",
+            "rows": [
+              139,
+              141,
+              142,
+              518
+            ]
+          }
+        ],
+        "active_profile_token_count": 100
+      }
+    }
+  ]
+}

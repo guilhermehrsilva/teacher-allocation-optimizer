@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "round": "rodada_003",
+  "state": "FALHA_ENTRADA_CONFIG",
+  "exit_code": 10,
+  "message": "A entrada deve conter exatamente um XLSX utilizável; encontrados 0: nenhum.",
+  "updated_at_utc": "2026-07-17T11:00:45.593684+00:00",
+  "history": [
+    {
+      "state": "INICIADA",
+      "message": "Rodada criada.",
+      "at_utc": "2026-07-17T11:00:45.560663+00:00"
+    },
+    {
+      "state": "SELECIONANDO_ENTRADA",
+      "message": "Selecionando a base de entrada.",
+      "at_utc": "2026-07-17T11:00:45.591166+00:00"
+    },
+    {
+      "state": "FALHA_ENTRADA_CONFIG",
+      "message": "A entrada deve conter exatamente um XLSX utilizável; encontrados 0: nenhum.",
+      "at_utc": "2026-07-17T11:00:45.593684+00:00",
+      "exit_code": 10
+    }
+  ]
+}

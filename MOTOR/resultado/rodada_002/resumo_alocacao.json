@@ -1,0 +1,27 @@
+{
+  "source": "BASE_TESTE_AR\\BASE_SINTETICA_PERFIL_DOCENTE_AR123.xlsx",
+  "status": "PARCIAL",
+  "solver_status": "OPTIMAL",
+  "transmissions": 402,
+  "allocated": 360,
+  "unassigned": 42,
+  "hours_per_transmission": 2,
+  "allocated_hours": 720,
+  "unassigned_reasons": {
+    "CONCORRENCIA_DE_CARGA_OU_HORARIO": 29,
+    "SEM_DOCENTE_COM_PERFIL_E_CARGA": 13
+  },
+  "active_teachers": 183,
+  "used_teachers": 182,
+  "zero_active_teachers": 1,
+  "high_capacity_score": 3341,
+  "wall_time_seconds": 0.8369379000000001,
+  "diagnostics": {
+    "phase_1_status": "OPTIMAL",
+    "switch_1_teacher_coverage_status": "OPTIMAL",
+    "switch_2_high_capacity_status": "OPTIMAL",
+    "best_used_teachers": 182,
+    "assignment_variables": 2045,
+    "teacher_slot_constraints": 441
+  }
+}

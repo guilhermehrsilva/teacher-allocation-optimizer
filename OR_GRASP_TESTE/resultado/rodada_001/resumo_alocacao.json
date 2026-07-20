@@ -1,0 +1,43 @@
+{
+  "source": "OR_GRASP_TESTE\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+  "status": "PARCIAL",
+  "solver_status": "OPTIMAL",
+  "transmissions": 402,
+  "allocated": 363,
+  "unassigned": 39,
+  "hours_per_transmission": 2,
+  "allocated_hours": 726,
+  "unassigned_reasons": {
+    "CAPACIDADE_LETIVA_ESGOTADA": 4,
+    "SEM_DOCENTE_COM_PERFIL_E_CARGA": 11,
+    "CHOQUE_DE_HORARIO": 19,
+    "CAPACIDADE_E_HORARIO_COMBINADOS": 4,
+    "AGENDA_INVALIDA": 1
+  },
+  "active_teachers": 229,
+  "used_teachers": 196,
+  "zero_active_teachers": 33,
+  "high_capacity_score": 3256,
+  "rescue_scarcity_score": 373,
+  "wall_time_seconds": 312.74519540020265,
+  "diagnostics": {
+    "cp_sat_wall_time_seconds": 1.6678037000000003,
+    "grasp_wall_time_seconds": 310.87981269997545,
+    "phase_1_status": "OPTIMAL",
+    "switch_1_teacher_coverage_status": "OPTIMAL",
+    "switch_2_high_capacity_status": "OPTIMAL",
+    "switch_3_scarcity_rescue_status": "OPTIMAL",
+    "best_used_teachers": 196,
+    "best_high_capacity_score": 3256,
+    "scarcity_rescue_penalty": 373,
+    "grasp_iterations": 200,
+    "grasp_alpha": 0.25,
+    "grasp_hint_unassigned": 39,
+    "grasp_hint_zero_active_teachers": 36,
+    "grasp_hint_high_capacity_score": 3208,
+    "grasp_hint_scarcity_penalty": 380,
+    "cp_sat_time_limit_seconds": null,
+    "assignment_variables": 2080,
+    "teacher_slot_constraints": 451
+  }
+}

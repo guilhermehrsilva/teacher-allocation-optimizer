@@ -1,0 +1,666 @@
+{
+  "schema_version": 1,
+  "produto": "Ferramenta de Alocacao Docente",
+  "versao": "1.0.0",
+  "algoritmo": "SHA-256",
+  "observacao": "Dados operacionais e o proprio manifesto nao integram a soma.",
+  "total_arquivos": 131,
+  "total_bytes": 2111460,
+  "arquivos": [
+    {
+      "caminho": ".gitignore",
+      "bytes": 353,
+      "sha256": "d7e299a099bc4d7b804f8a2ddce9c64bb6c1559abd629e3d1dc07dd0d16f6438"
+    },
+    {
+      "caminho": "backend/app/__init__.py",
+      "bytes": 63,
+      "sha256": "bd6a42a1109ad0af689082321e412f6950bed530e8ffa5aa48ebb3ac2ea8090b"
+    },
+    {
+      "caminho": "backend/app/asgi.py",
+      "bytes": 306,
+      "sha256": "9cc9cbc412914a9ce6371d40b2131c79d555396fa6773034e8918021ba8c1e51"
+    },
+    {
+      "caminho": "backend/app/config.py",
+      "bytes": 5234,
+      "sha256": "f0129d4ab4e6b6211f2698f3db1478d0b1bfe65a051eba66e9154795bce91ae4"
+    },
+    {
+      "caminho": "backend/app/database.py",
+      "bytes": 32060,
+      "sha256": "1fd116d91f817ee0d55a10204a43cb0604d5cb9429248a3492ecfb1345215605"
+    },
+    {
+      "caminho": "backend/app/main.py",
+      "bytes": 22317,
+      "sha256": "56d4ef67e5ca7c530b0127d6cdb100032a09b5c758624d58a692557ca5ce52fa"
+    },
+    {
+      "caminho": "backend/app/security.py",
+      "bytes": 7852,
+      "sha256": "1e029120c1a3d76e7230f79fc599f9e9b28d92ea12b73fb5e9c33b3013dea938"
+    },
+    {
+      "caminho": "backend/app/services/__init__.py",
+      "bytes": 55,
+      "sha256": "d7a7926f182a906c391a58e627661da868b970056df36389dd6167f3b4d620dd"
+    },
+    {
+      "caminho": "backend/app/services/coordination.py",
+      "bytes": 421,
+      "sha256": "b066eeb02993b10411b3f4bf54e27e451c80a0c38d80f82762fb429bceba98a6"
+    },
+    {
+      "caminho": "backend/app/services/insights.py",
+      "bytes": 19344,
+      "sha256": "e39d730291bef4ace79ec2a244c4c548e42195520f9a7385faf687cf6df2b4ff"
+    },
+    {
+      "caminho": "backend/app/services/jobs.py",
+      "bytes": 24690,
+      "sha256": "2844468beedb3e593136e74f908b5f5451ba02fe29bff0678301619be9588012"
+    },
+    {
+      "caminho": "backend/app/services/resets.py",
+      "bytes": 5642,
+      "sha256": "072e41684e23865ee3ff7941e6611086568674c5a3f5ae00702dded133792220"
+    },
+    {
+      "caminho": "backend/app/services/scenarios.py",
+      "bytes": 37772,
+      "sha256": "06296764b8b3ca6fc71925aae0c2f6e15e688f4462dbd69c5418569fca1d5c4e"
+    },
+    {
+      "caminho": "backend/app/services/uploads.py",
+      "bytes": 14304,
+      "sha256": "d4d95f07b3dff481a0598c5c49ab63948c74fa89b66ebc647f956e2fd79c412c"
+    },
+    {
+      "caminho": "backend/requirements.txt",
+      "bytes": 24,
+      "sha256": "21342236ba2705eba605b45801a96dd00089ee1d79a7cb7c60f02279f88f2d12"
+    },
+    {
+      "caminho": "backend/run.py",
+      "bytes": 270,
+      "sha256": "09cab7461a4f837f3548ee24a80813c3404c6138b80093df9b2760992ebb7b9c"
+    },
+    {
+      "caminho": "backend/tests/test_backend.py",
+      "bytes": 48563,
+      "sha256": "504d61df4c2c64a68a3f2b557c3f0535104e71c5bcd018e5ea7f33ad519e2def"
+    },
+    {
+      "caminho": "data/.gitkeep",
+      "bytes": 2,
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    {
+      "caminho": "data/README.md",
+      "bytes": 494,
+      "sha256": "49e04b1312efdd81985009a28b3933d8693debf370f0da61ea29381edd7cf33e"
+    },
+    {
+      "caminho": "docs/00_VISAO_EXECUTIVA.md",
+      "bytes": 5403,
+      "sha256": "c343b728596e9e8babf4cbe250d524680bf4589b11afee825cc5b0e7e2f180fc"
+    },
+    {
+      "caminho": "docs/01_ARQUITETURA.md",
+      "bytes": 6831,
+      "sha256": "a1e7c66930b5fda24d9af7a023cb634e41e7e04baae8eba07fcbb656a90f3586"
+    },
+    {
+      "caminho": "docs/02_REGRAS_DE_NEGOCIO.md",
+      "bytes": 7833,
+      "sha256": "f7451859e9719dea40a15e8a1831347d7a4ca3d3c28f93a4e7dc3f5c58b47fd8"
+    },
+    {
+      "caminho": "docs/03_SOLVERS_E_OTIMIZACAO.md",
+      "bytes": 6107,
+      "sha256": "8048b2386073d6adeb3f1c900dff438a730cda9ea2a666eb7e2a4fd5fb345a57"
+    },
+    {
+      "caminho": "docs/04_INTERFACE_WEB.md",
+      "bytes": 6341,
+      "sha256": "9aab1d1724801e6b68d0c7b005123a58ac203fed5df5dbe94efaeccab7548702"
+    },
+    {
+      "caminho": "docs/05_API_E_DADOS.md",
+      "bytes": 5948,
+      "sha256": "2cd5ca7287110a1e71fc47da51a3c81e9362e81723dc91601cea633c8313b537"
+    },
+    {
+      "caminho": "docs/06_INSTALACAO_E_OPERACAO.md",
+      "bytes": 6725,
+      "sha256": "0681d0600c2b0590bab4ab8e17a34445cc78ddddc870cec12287d07f602cdc75"
+    },
+    {
+      "caminho": "docs/07_SEGURANCA_PRIVACIDADE.md",
+      "bytes": 4615,
+      "sha256": "5ddc0be1394553b121d838deb60a72171bc86b42e73df11435b8582cc561d90e"
+    },
+    {
+      "caminho": "docs/08_QUALIDADE_E_HOMOLOGACAO.md",
+      "bytes": 6728,
+      "sha256": "30d36016b1af86326fa3031ccf8815608822eb2d14f6ec018093d5d22cab134f"
+    },
+    {
+      "caminho": "docs/09_TROUBLESHOOTING.md",
+      "bytes": 5727,
+      "sha256": "7d2f9089ae7db39f7e34b98f244682d21162f95c6d50231f8c99403d191610b6"
+    },
+    {
+      "caminho": "docs/10_NOTAS_DA_VERSAO.md",
+      "bytes": 4342,
+      "sha256": "7bae87c7811f405baf61460a775cf7b48b97a2620a73a2120024f38ffd2497e2"
+    },
+    {
+      "caminho": "docs/evidencias/README.md",
+      "bytes": 3658,
+      "sha256": "cea918a3b8bb9b1cb2303d3c37dc6949502a18257bd180b12e9bb3dfaba2cddf"
+    },
+    {
+      "caminho": "docs/GLOSSARIO.md",
+      "bytes": 3243,
+      "sha256": "65adaaf8ff21fcf46ead9a48e7f62f9d26ca45a9a776a1d26755ecb4e79a2ebf"
+    },
+    {
+      "caminho": "docs/THIRD_PARTY_NOTICES.md",
+      "bytes": 2910,
+      "sha256": "7dc2175063dfeb87764efb89e9466041ac7d3df5445f6073a0b46e075f15b9de"
+    },
+    {
+      "caminho": "engines/primary/.gitignore",
+      "bytes": 131,
+      "sha256": "c980713f033a2f16f3290573f85e36a1bb755a92b314f3a9af09c4be4b2ccb1d"
+    },
+    {
+      "caminho": "engines/primary/docs/contrato_entrada.md",
+      "bytes": 2082,
+      "sha256": "3551f618c1e2da00a46d82ea24873f187ccfce50d16c9c131a148672809fc9eb"
+    },
+    {
+      "caminho": "engines/primary/docs/operacao.md",
+      "bytes": 1990,
+      "sha256": "899a96d82533852937d91e3d925a5cbfdf8933598dd03f162cd671983b2a829a"
+    },
+    {
+      "caminho": "engines/primary/docs/regras_negocio.md",
+      "bytes": 2533,
+      "sha256": "85e7d1503068052cf001d233230c9a417542015fb31150cf6dccaf03130475d0"
+    },
+    {
+      "caminho": "engines/primary/executar_pipeline.py",
+      "bytes": 2413,
+      "sha256": "692f5dd1968fd446fe9d437614283e3619adef286bd295e35681c03f6f610cff"
+    },
+    {
+      "caminho": "engines/primary/pipeline.py",
+      "bytes": 20053,
+      "sha256": "e42b654e792400995cc1dfc1b03a69412da34772cb0c43a453b096803106c7c8"
+    },
+    {
+      "caminho": "engines/primary/README.md",
+      "bytes": 3174,
+      "sha256": "01a8b1eba5b8eb8d683baf6f1145fdc35f11f2261296c981ecaa02c52c56027a"
+    },
+    {
+      "caminho": "engines/primary/requirements.txt",
+      "bytes": 39,
+      "sha256": "4be1bd6893c8a4e83784edcac2729b5bf16f4d0a97e6dbaf3c5d17c38184daa7"
+    },
+    {
+      "caminho": "engines/primary/src/alocacao_docente/__init__.py",
+      "bytes": 181,
+      "sha256": "2588c8d5f2e0a4e21bb7b4371ac630436a0e596a6992602847cb189c8c4c224b"
+    },
+    {
+      "caminho": "engines/primary/src/alocacao_docente/validation.py",
+      "bytes": 28200,
+      "sha256": "93d804928a2af1caa26262f9edc40e51dca1c1546c45e83111b988cdfcddc24b"
+    },
+    {
+      "caminho": "engines/primary/src/motor_alocacao/__init__.py",
+      "bytes": 1062,
+      "sha256": "709c2ab47a2a8f4ec2849dd91b8470f32e4b1e85a8215e2570e03820df86af12"
+    },
+    {
+      "caminho": "engines/primary/src/motor_alocacao/audit.py",
+      "bytes": 14483,
+      "sha256": "2173feb569fddd05526ed7f5a848f4ce425b7033b2497a1f7bb39b8615b5028e"
+    },
+    {
+      "caminho": "engines/primary/src/motor_alocacao/domain.py",
+      "bytes": 3971,
+      "sha256": "d36fa562c3e827f4aa92aad772278ffee7df518e4e34387fc40511cf81f4ad1a"
+    },
+    {
+      "caminho": "engines/primary/src/motor_alocacao/eligibility.py",
+      "bytes": 885,
+      "sha256": "053e63845e5fb19dab9ebeb2725e39b4eb6fa8317ef363da5f29426b5a475d18"
+    },
+    {
+      "caminho": "engines/primary/src/motor_alocacao/grasp.py",
+      "bytes": 11598,
+      "sha256": "a97c0c7cfb3fdc2bbf793149397684a6da2c0533604e4719dd9f3aa83aeca0a4"
+    },
+    {
+      "caminho": "engines/primary/src/motor_alocacao/loader.py",
+      "bytes": 6624,
+      "sha256": "9efac514f53c949313d757355c0e961c7235307693bd78cc51c490b9b9af7cf9"
+    },
+    {
+      "caminho": "engines/primary/src/motor_alocacao/reporting.py",
+      "bytes": 11583,
+      "sha256": "c77d5bfab24e0c7547c7f16cceabe2cd0e14d194720617cc83c23763e835c4fd"
+    },
+    {
+      "caminho": "engines/primary/src/motor_alocacao/solver.py",
+      "bytes": 21890,
+      "sha256": "efc87e31c9ef297f827848c4abed57f30dfd18cfd3d3d0ccf69d3a219594099b"
+    },
+    {
+      "caminho": "engines/primary/tests/test_audit.py",
+      "bytes": 11795,
+      "sha256": "d2231d593bbdcfa762ae46cfeabe9e8fefd69cb26c6110cbe099f71cf9a1ded1"
+    },
+    {
+      "caminho": "engines/primary/tests/test_loader.py",
+      "bytes": 6915,
+      "sha256": "ef4dd1d9b2ef11d8bd63d0818663f60e87b1251b93ba66857ddbb1fbbd23bd71"
+    },
+    {
+      "caminho": "engines/primary/tests/test_pipeline.py",
+      "bytes": 12082,
+      "sha256": "70154f145a59e4ef33becf61fa0b2ac86c0175c6dbabb77f8bcf04452a7f3601"
+    },
+    {
+      "caminho": "engines/primary/tests/test_reporting.py",
+      "bytes": 11509,
+      "sha256": "887a33c4818883dc3a16228a88a456e694bc56ba7550ba3dff1be93d78ea5cfe"
+    },
+    {
+      "caminho": "engines/primary/tests/test_solver.py",
+      "bytes": 14604,
+      "sha256": "e92bccc586a622ae058d18e21d403d3e0209751805606e9f1fb82eb7b8537b5a"
+    },
+    {
+      "caminho": "engines/primary/tests/test_validation.py",
+      "bytes": 9625,
+      "sha256": "dbca79b5f13ecc7eafdc053e20b11b8941a89b929f730d37e5980e4dada0ea39"
+    },
+    {
+      "caminho": "engines/primary/VERSION",
+      "bytes": 12,
+      "sha256": "3561fbd9b6c5a47c3ffc64fd44e256981823d7cf5804516adc1a3be133499ad3"
+    },
+    {
+      "caminho": "engines/scenarios/.gitignore",
+      "bytes": 65,
+      "sha256": "f2ed2a7262612e00ea72b4aff9f86de966575f8746a7180320ce69d1dff33c04"
+    },
+    {
+      "caminho": "engines/scenarios/executar_cenario.py",
+      "bytes": 2757,
+      "sha256": "12ac781b92948fece51c0df0fa08f9d389e3809a33cd776aee657aa7726f5fff"
+    },
+    {
+      "caminho": "engines/scenarios/pipeline.py",
+      "bytes": 22553,
+      "sha256": "1f2be0ae19da0726b54501d124043e87f3664048dfd5b6fb99fe4d61bc4380af"
+    },
+    {
+      "caminho": "engines/scenarios/README.md",
+      "bytes": 1201,
+      "sha256": "a0fc74b72c8346ad701fbe3f685ed052ac733e9072b4d014c965be666be9dfcb"
+    },
+    {
+      "caminho": "engines/scenarios/requirements.txt",
+      "bytes": 39,
+      "sha256": "4be1bd6893c8a4e83784edcac2729b5bf16f4d0a97e6dbaf3c5d17c38184daa7"
+    },
+    {
+      "caminho": "engines/scenarios/src/alocacao_docente/__init__.py",
+      "bytes": 181,
+      "sha256": "2588c8d5f2e0a4e21bb7b4371ac630436a0e596a6992602847cb189c8c4c224b"
+    },
+    {
+      "caminho": "engines/scenarios/src/alocacao_docente/validation.py",
+      "bytes": 28200,
+      "sha256": "93d804928a2af1caa26262f9edc40e51dca1c1546c45e83111b988cdfcddc24b"
+    },
+    {
+      "caminho": "engines/scenarios/src/motor_alocacao/__init__.py",
+      "bytes": 1062,
+      "sha256": "709c2ab47a2a8f4ec2849dd91b8470f32e4b1e85a8215e2570e03820df86af12"
+    },
+    {
+      "caminho": "engines/scenarios/src/motor_alocacao/audit.py",
+      "bytes": 17191,
+      "sha256": "9e00cf47cb822de9eb153e09745ba96f1fbbd3a8553903eb12826e106c0304e1"
+    },
+    {
+      "caminho": "engines/scenarios/src/motor_alocacao/domain.py",
+      "bytes": 3971,
+      "sha256": "d36fa562c3e827f4aa92aad772278ffee7df518e4e34387fc40511cf81f4ad1a"
+    },
+    {
+      "caminho": "engines/scenarios/src/motor_alocacao/eligibility.py",
+      "bytes": 885,
+      "sha256": "053e63845e5fb19dab9ebeb2725e39b4eb6fa8317ef363da5f29426b5a475d18"
+    },
+    {
+      "caminho": "engines/scenarios/src/motor_alocacao/grasp.py",
+      "bytes": 11598,
+      "sha256": "a97c0c7cfb3fdc2bbf793149397684a6da2c0533604e4719dd9f3aa83aeca0a4"
+    },
+    {
+      "caminho": "engines/scenarios/src/motor_alocacao/loader.py",
+      "bytes": 6624,
+      "sha256": "9efac514f53c949313d757355c0e961c7235307693bd78cc51c490b9b9af7cf9"
+    },
+    {
+      "caminho": "engines/scenarios/src/motor_alocacao/policies.py",
+      "bytes": 4305,
+      "sha256": "cea331d93b80870ba74a76d76636b7ac58f99a547f0600f56815d833af29a218"
+    },
+    {
+      "caminho": "engines/scenarios/src/motor_alocacao/reporting.py",
+      "bytes": 11583,
+      "sha256": "c77d5bfab24e0c7547c7f16cceabe2cd0e14d194720617cc83c23763e835c4fd"
+    },
+    {
+      "caminho": "engines/scenarios/src/motor_alocacao/solver.py",
+      "bytes": 25302,
+      "sha256": "bb0c4f6d5a10b7cab12fd33d92ee13736530148157e2a40bab0fd7a4c20f8325"
+    },
+    {
+      "caminho": "engines/scenarios/tests/test_audit.py",
+      "bytes": 13666,
+      "sha256": "dc0206ad0e75b1243afd484ab2f2ca5d5e01c533c4145cb4b7a5d61ea33cf4d7"
+    },
+    {
+      "caminho": "engines/scenarios/tests/test_loader.py",
+      "bytes": 6915,
+      "sha256": "ef4dd1d9b2ef11d8bd63d0818663f60e87b1251b93ba66857ddbb1fbbd23bd71"
+    },
+    {
+      "caminho": "engines/scenarios/tests/test_pipeline.py",
+      "bytes": 13586,
+      "sha256": "8ea08d35b49741d59a48676df7d5693548653d426384cfbd21ecbe3268b632ca"
+    },
+    {
+      "caminho": "engines/scenarios/tests/test_reporting.py",
+      "bytes": 11509,
+      "sha256": "887a33c4818883dc3a16228a88a456e694bc56ba7550ba3dff1be93d78ea5cfe"
+    },
+    {
+      "caminho": "engines/scenarios/tests/test_solver.py",
+      "bytes": 17802,
+      "sha256": "3e3b5eff7cf12e25b7121f7c547deea74e68bf2de41cd1b3c54eb45b7ead8c9d"
+    },
+    {
+      "caminho": "engines/scenarios/tests/test_validation.py",
+      "bytes": 9625,
+      "sha256": "dbca79b5f13ecc7eafdc053e20b11b8941a89b929f730d37e5980e4dada0ea39"
+    },
+    {
+      "caminho": "engines/scenarios/VERSION",
+      "bytes": 16,
+      "sha256": "b7f7efe79e051884403af783d240fc1d514b74b71bf2107f464903f99c3c3cd1"
+    },
+    {
+      "caminho": "executar.py",
+      "bytes": 6904,
+      "sha256": "5a791f04a09461e571e8d40e954c8019d0976bb2e78721530410b3691320c29e"
+    },
+    {
+      "caminho": "exemplos/BASE_DEMONSTRACAO_ANONIMIZADA_M52.xlsx",
+      "bytes": 130753,
+      "sha256": "7af0267a486ff6b8ea8de510c108faf788658bb21d2c35c7d2e7f7a807b59e9b"
+    },
+    {
+      "caminho": "exemplos/README.md",
+      "bytes": 757,
+      "sha256": "244970ac5b8f8f8d1b94072ba0fe51490432442ae3191b570442c51e327844a0"
+    },
+    {
+      "caminho": "frontend/dist/assets/index-BZ91pqbF.css",
+      "bytes": 61440,
+      "sha256": "e26e635697f7bb36a9faf380e0eb5f46c8d6db0749be270925c9e3261a489244"
+    },
+    {
+      "caminho": "frontend/dist/assets/index-DmpuzNd-.js",
+      "bytes": 282594,
+      "sha256": "12ff8eea9c41468f1551dde1c0b6744462305502eb498c8e24ed93e6a56eae52"
+    },
+    {
+      "caminho": "frontend/dist/index.html",
+      "bytes": 473,
+      "sha256": "3e77f4b3576ba4d9e1456a1eadf41631c5a570cbe1576d825829a05a1b353904"
+    },
+    {
+      "caminho": "frontend/index.html",
+      "bytes": 375,
+      "sha256": "13ee60dde4281d601c0e9ff4881f1b3464290f5f36292fb38dd584e20e58c3e6"
+    },
+    {
+      "caminho": "frontend/package-lock.json",
+      "bytes": 63057,
+      "sha256": "2ea3b32017ffc663737fc353177020a76637db1c5f415a506a93bbb52f971f8d"
+    },
+    {
+      "caminho": "frontend/package.json",
+      "bytes": 513,
+      "sha256": "0bf1d923e7b1ec482492ac1e8f7db66e96e0f7946bd1d89474fdc4a834d17967"
+    },
+    {
+      "caminho": "frontend/src/api.ts",
+      "bytes": 5228,
+      "sha256": "bfe32467c89c579bd071776b773d8d5ab990e8acd9692ca8c49ec499a4d3f39d"
+    },
+    {
+      "caminho": "frontend/src/App.tsx",
+      "bytes": 3929,
+      "sha256": "ddcfe145ccc7e89749715db4fbb7461dd054fa0e78d2c18d2a0a3ffdfff3d180"
+    },
+    {
+      "caminho": "frontend/src/components/LoadingState.tsx",
+      "bytes": 397,
+      "sha256": "16cd5bdb78a50c2462f6d54ccc38a2d1d8dc4f8c27c3c8937fcc967bf54ac21e"
+    },
+    {
+      "caminho": "frontend/src/components/OptimalLogo.tsx",
+      "bytes": 5367,
+      "sha256": "01f3a7e02421e15e7c13e90dcd4a98337e97298dcf9d0f7f21b0a6baeaf46d03"
+    },
+    {
+      "caminho": "frontend/src/components/ResetPrimaryRounds.tsx",
+      "bytes": 3651,
+      "sha256": "0ecfc5585f2bd9866150607206ee7a6163149dc6ef47bea5897e752da45fd55d"
+    },
+    {
+      "caminho": "frontend/src/components/StatusBadge.tsx",
+      "bytes": 1508,
+      "sha256": "52b1dc4ac54b779ec49067f0e3912677d8bae418083f279cf12f508ca3ebbb17"
+    },
+    {
+      "caminho": "frontend/src/jobPresentation.ts",
+      "bytes": 673,
+      "sha256": "d046ff37a7f30badc05af6493b56a66f53ff56739339b69891fbeedf7a38ad6a"
+    },
+    {
+      "caminho": "frontend/src/main.tsx",
+      "bytes": 244,
+      "sha256": "cdaa9a744875ef72adb0726c7a7d20b7f4460954ce6d25e67c1297754302c04d"
+    },
+    {
+      "caminho": "frontend/src/pages/DashboardPage.tsx",
+      "bytes": 19457,
+      "sha256": "51aab938af7d616c48bf26e34aff833a92da28b5343da19db1538863733b43f6"
+    },
+    {
+      "caminho": "frontend/src/pages/ExportPage.tsx",
+      "bytes": 12893,
+      "sha256": "10fef15c2c63d80252d10458a0ba1b5b0e87fbc12fcce20bed195a595e8bec06"
+    },
+    {
+      "caminho": "frontend/src/pages/InsightsPage.tsx",
+      "bytes": 12715,
+      "sha256": "9c7a3d19df3eac1a76445e492ac034f601c97451dc7cf69a02f7ed2d8bb7ae90"
+    },
+    {
+      "caminho": "frontend/src/pages/ProcessPage.tsx",
+      "bytes": 16899,
+      "sha256": "b92aa2940f2ea0f8ed03f45c4c791e898d5843cc1838b23663aa415119cea8e4"
+    },
+    {
+      "caminho": "frontend/src/pages/ScenariosPage.tsx",
+      "bytes": 39940,
+      "sha256": "b09bd188fcd970ad6cae96d1d4d5de17a61f2e03b3d892472c3b013bb595cbc1"
+    },
+    {
+      "caminho": "frontend/src/styles.css",
+      "bytes": 71929,
+      "sha256": "371a4ded22919fefd2a08c5ac8d0195265496e4dfd9a909c7e42db95a76982c7"
+    },
+    {
+      "caminho": "frontend/src/types.ts",
+      "bytes": 9562,
+      "sha256": "92dc59a3739a22d11e2c712e6f80235bcf51fc43d88c40359b26344bd3ea65cf"
+    },
+    {
+      "caminho": "frontend/tsconfig.app.json",
+      "bytes": 529,
+      "sha256": "c47893842c42c6137e589ae1440946cf7cb64ce1e7dc5af69fea30dfd5d43bbd"
+    },
+    {
+      "caminho": "frontend/tsconfig.json",
+      "bytes": 128,
+      "sha256": "53a5de3ac873acc59864b5d565114c460d45f248e60e27ec84a2a621ad26d027"
+    },
+    {
+      "caminho": "frontend/tsconfig.node.json",
+      "bytes": 180,
+      "sha256": "62ee70ccdb851cbc8277aa3e2255170cfa3cb3bd67fc99da6b5fe1be5cb0e094"
+    },
+    {
+      "caminho": "frontend/vite.config.ts",
+      "bytes": 242,
+      "sha256": "de2a2bb04e312aa41f70ec7049999e78a30e391891492413e7b0c03e51b17ce2"
+    },
+    {
+      "caminho": "iniciar.cmd",
+      "bytes": 90,
+      "sha256": "dee6a1a7783d9cd620faaf685a59605c1560d30000517e76e69120f87d0a363a"
+    },
+    {
+      "caminho": "iniciar.ps1",
+      "bytes": 1396,
+      "sha256": "2dd2b4f9141f8b379aa527ab48bfa12554c024950b662470de16bec75f6c6944"
+    },
+    {
+      "caminho": "OPTIMAL.bat",
+      "bytes": 519,
+      "sha256": "a5e35c0068478a55342dedff4eccbada813608d9bf032fb31c3e8246c2bfe6b2"
+    },
+    {
+      "caminho": "README.md",
+      "bytes": 3175,
+      "sha256": "137bc27b9880ec7a6e9c19a439db73e71912165a8ab91da7c404e31e6d80ab02"
+    },
+    {
+      "caminho": "requirements.lock",
+      "bytes": 57319,
+      "sha256": "850e57ac689ffca871067181baa89add775316f818fa06d7cef7a4e949e6e6be"
+    },
+    {
+      "caminho": "requirements.txt",
+      "bytes": 123,
+      "sha256": "05fb563589ffd67ac7c746b50fd3fbd4c4a8ed1f41d99255bf40580d649a2bdc"
+    },
+    {
+      "caminho": "SBOM-frontend.cdx.json",
+      "bytes": 170510,
+      "sha256": "bf21350f844154fc64d222aa4b95e43b27580d3f4b156761d588b22ce1e7f2e7"
+    },
+    {
+      "caminho": "SBOM-python.cdx.json",
+      "bytes": 176320,
+      "sha256": "c4255ff454c81226faa9482235725d1e5a269f95c6788cd18a3fd1752a1c4e15"
+    },
+    {
+      "caminho": "scripts/__init__.py",
+      "bytes": 61,
+      "sha256": "32eb2845d03f31e2f88364b1d7fa06edd26e7b0a33e32953cc2b5c6846290975"
+    },
+    {
+      "caminho": "scripts/anonimizar_base_demo.py",
+      "bytes": 3571,
+      "sha256": "a15f1e825aa691a8dd88c9f43bfdf236dfba6664a71d768f3489abdaf9e8a8d7"
+    },
+    {
+      "caminho": "scripts/backup_restore.py",
+      "bytes": 24294,
+      "sha256": "405ba77c3dfb8d45a5414df3cbf08efc3ad2ebb3dbaa476a7d636dc686c5486b"
+    },
+    {
+      "caminho": "scripts/e2e_api.py",
+      "bytes": 12554,
+      "sha256": "331222951e56ef28673e2380af0e9909491ba2252b0367c63735b0c23da0c454"
+    },
+    {
+      "caminho": "scripts/empacotar_release.py",
+      "bytes": 5207,
+      "sha256": "8882df59860228da0d9c652d2936bb602dcd15f46d532a188c3f6ec20770c2e4"
+    },
+    {
+      "caminho": "scripts/instalar.ps1",
+      "bytes": 2798,
+      "sha256": "33dc3893fb4be04ba317a6aff644b9877e7fc0f01704ed87f304045bb4c9ab1a"
+    },
+    {
+      "caminho": "scripts/integridade_release.py",
+      "bytes": 9313,
+      "sha256": "ecc145b7ee72e3cee5f86c1a302114fc8d66f5988c1c6d1c00573a69a2236ee7"
+    },
+    {
+      "caminho": "scripts/testar.ps1",
+      "bytes": 1506,
+      "sha256": "0f3ff0f57eefea234d4a917201d349bade7d53b10cfaa44d7087c8603bf3b022"
+    },
+    {
+      "caminho": "scripts/tests/__init__.py",
+      "bytes": 57,
+      "sha256": "f40e653da39e8afd198ed61eac45790c9f42327d962b25eac5fd83b484f6f089"
+    },
+    {
+      "caminho": "scripts/tests/test_release_scripts.py",
+      "bytes": 23396,
+      "sha256": "02a911ee9004af98dac2c0e71a4eb2f7e967c712f6d01ce118ff595b9426856e"
+    },
+    {
+      "caminho": "THIRD_PARTY_LICENSES.json",
+      "bytes": 153569,
+      "sha256": "9b354eaed9c68d796b2981c7e0cb25c69f9cec07d5a2221278d6447d7a4f1329"
+    },
+    {
+      "caminho": "THIRD_PARTY_LICENSES.md",
+      "bytes": 5436,
+      "sha256": "bc5d7a273f2640c4dd75e8e301f6028e8429cc6e16a02b54faaf5974dc738725"
+    },
+    {
+      "caminho": "THIRD_PARTY_NOTICES.md",
+      "bytes": 1655,
+      "sha256": "b1c8a8f547abf6768635f64d93c3c7916efc9f8ba5bd0f636b0690b2e5be38e2"
+    },
+    {
+      "caminho": "VERSION",
+      "bytes": 7,
+      "sha256": "4ca8bbd3c595ee306226c6996b32b8d47a900217c55a7ed0cfc868ee444f34f1"
+    }
+  ]
+}

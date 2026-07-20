@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "round": "rodada_004",
+  "state": "CONCLUIDA",
+  "exit_code": 0,
+  "message": "Rodada concluída e auditada com sucesso.",
+  "updated_at_utc": "2026-07-17T14:50:50.088383+00:00",
+  "history": [
+    {
+      "state": "INICIADA",
+      "message": "Rodada criada.",
+      "at_utc": "2026-07-17T14:50:43.003296+00:00"
+    },
+    {
+      "state": "SELECIONANDO_ENTRADA",
+      "message": "Selecionando a base de entrada.",
+      "at_utc": "2026-07-17T14:50:43.035355+00:00"
+    },
+    {
+      "state": "COPIANDO_ENTRADA",
+      "message": "Copiando BASE_DEMONSTRACAO_ANONIMIZADA_M52.xlsx para a rodada.",
+      "at_utc": "2026-07-17T14:50:43.055679+00:00"
+    },
+    {
+      "state": "VALIDANDO",
+      "message": "Validando a cópia da base para o módulo 52.",
+      "at_utc": "2026-07-17T14:50:43.074521+00:00"
+    },
+    {
+      "state": "RESOLVENDO",
+      "message": "Executando CP-SAT puro.",
+      "at_utc": "2026-07-17T14:50:43.752486+00:00"
+    },
+    {
+      "state": "AUDITANDO",
+      "message": "Auditando a solução produzida.",
+      "at_utc": "2026-07-17T14:50:49.565726+00:00"
+    },
+    {
+      "state": "GRAVANDO_ALOCACAO",
+      "message": "Publicando os resultados auditados.",
+      "at_utc": "2026-07-17T14:50:49.849676+00:00"
+    },
+    {
+      "state": "CONCLUIDA",
+      "message": "Rodada concluída e auditada com sucesso.",
+      "at_utc": "2026-07-17T14:50:50.088383+00:00",
+      "exit_code": 0
+    }
+  ]
+}

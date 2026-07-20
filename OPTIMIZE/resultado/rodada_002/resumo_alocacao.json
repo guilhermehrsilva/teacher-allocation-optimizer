@@ -1,0 +1,51 @@
+{
+  "source": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\OPTIMIZE\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+  "status": "PARCIAL",
+  "solver_status": "OPTIMAL",
+  "transmissions": 402,
+  "allocated": 363,
+  "unassigned": 39,
+  "hours_per_transmission": 2,
+  "allocated_hours": 726,
+  "unassigned_reasons": {
+    "CAPACIDADE_LETIVA_ESGOTADA": 5,
+    "SEM_DOCENTE_COM_PERFIL_E_CARGA": 11,
+    "CHOQUE_DE_HORARIO": 16,
+    "CAPACIDADE_E_HORARIO_COMBINADOS": 6,
+    "AGENDA_INVALIDA": 1
+  },
+  "allocation_reasons": {
+    "Docente elegível selecionado entre alternativas igualmente ótimas": 141,
+    "Único docente elegível por perfil, contrato, carga e horário": 21,
+    "Docente elegível priorizado pela maior CH letiva": 186,
+    "Docente Stricto elegível, respeitando o limite de uma disciplina no módulo": 11,
+    "Docente elegível priorizado para ampliar a cobertura de docentes": 4
+  },
+  "active_teachers": 229,
+  "used_teachers": 196,
+  "zero_active_teachers": 33,
+  "high_capacity_score": 3256,
+  "rescue_scarcity_score": 5,
+  "wall_time_seconds": 1.5945242999587208,
+  "diagnostics": {
+    "cp_sat_wall_time_seconds": 1.3532225,
+    "grasp_wall_time_seconds": 0.0,
+    "phase_1_status": "OPTIMAL",
+    "switch_1_teacher_coverage_status": "OPTIMAL",
+    "switch_2_high_capacity_status": "OPTIMAL",
+    "switch_3_scarcity_rescue_status": "OPTIMAL",
+    "best_used_teachers": 196,
+    "best_high_capacity_score": 3256,
+    "scarcity_rescue_penalty": 5,
+    "unique_candidate_unassigned": 5,
+    "grasp_iterations": 0,
+    "grasp_alpha": 0.25,
+    "grasp_hint_unassigned": null,
+    "grasp_hint_zero_active_teachers": null,
+    "grasp_hint_high_capacity_score": null,
+    "grasp_hint_scarcity_penalty": null,
+    "cp_sat_time_limit_seconds": null,
+    "assignment_variables": 2080,
+    "teacher_slot_constraints": 451
+  }
+}

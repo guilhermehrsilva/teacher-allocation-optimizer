@@ -1,0 +1,183 @@
+{
+  "schema_version": 2,
+  "round": "rodada_001",
+  "created_at_utc": "2026-07-14T17:22:06.290960+00:00",
+  "config": {
+    "input_dir": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\vbeta\\entrada",
+    "output_dir": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\vbeta\\resultados",
+    "base_argument": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\TESTEM52\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+    "expected_module": 52,
+    "workers": 8,
+    "max_time_seconds": null,
+    "random_seed": 42,
+    "grasp_iterations": 0,
+    "require_optimal": true
+  },
+  "versions": {
+    "pipeline": "0.1.0-beta",
+    "output_schema": 2,
+    "validation_contract": "2.1",
+    "python": "3.14.5rc1",
+    "openpyxl": "3.1.5",
+    "ortools": "9.15.6755"
+  },
+  "code_fingerprints": {
+    "pipeline": {
+      "path": "pipeline.py",
+      "sha256": "a6dfe5860493d9953bac5cb43e1d218273b62bf52ce8de45f34f5acf343156bc"
+    },
+    "validation": {
+      "path": "src\\alocacao_docente\\validation.py",
+      "sha256": "2d74a62b20fb14185b20a70ae72cecd29ef1384961892e227e2a60850d235524"
+    },
+    "domain": {
+      "path": "src\\motor_alocacao\\domain.py",
+      "sha256": "352ff0c2cc1ab8b89a4f1901291fce8341e63742d9d05151f4d7735671cca1bd"
+    },
+    "eligibility": {
+      "path": "src\\motor_alocacao\\eligibility.py",
+      "sha256": "68c173990567b9322d3c646fb1c4e0916d3b9b5db4e3dffaf2399999bc9c46d5"
+    },
+    "loader": {
+      "path": "src\\motor_alocacao\\loader.py",
+      "sha256": "9b4703d6af0280c2a95404c2642ff1aac3564e66393acabc47378386687e7513"
+    },
+    "solver": {
+      "path": "src\\motor_alocacao\\solver.py",
+      "sha256": "6c0ace605a8e812cc42f6107aeaf68a538e7dd525aac9b1cc5e216d412b55d44"
+    },
+    "grasp": {
+      "path": "src\\motor_alocacao\\grasp.py",
+      "sha256": "ebbfd929a930e1179802612016069643fdd9bb01fd0f7e12476ff631757b5ddd"
+    },
+    "audit": {
+      "path": "src\\motor_alocacao\\audit.py",
+      "sha256": "eff058c18b04ea0fcd9a8a652f3789c811da6734f2085eab047b86d713db089e"
+    },
+    "reporting": {
+      "path": "src\\motor_alocacao\\reporting.py",
+      "sha256": "9a6761035cdece71ad61e60440892f6e34631c0ab34f623d924c43214e10219f"
+    }
+  },
+  "source": {
+    "selection_mode": "explicita",
+    "original_path": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\TESTEM52\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+    "copied_path": "fonte\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+    "filename": "BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+    "size_bytes": 145924,
+    "sha256": "48d0478f0ce58630f11e729e96fec43842e3a47fdc8f9e4c994979ea47ecd6dc"
+  },
+  "phases": {
+    "validation": {
+      "status": "APROVADO_COM_RESSALVAS",
+      "source_sha256": "48d0478f0ce58630f11e729e96fec43842e3a47fdc8f9e4c994979ea47ecd6dc",
+      "severity_counts": {
+        "CRÍTICA": 0,
+        "ALTA": 1,
+        "MÉDIA": 2,
+        "BAIXA": 0
+      },
+      "blocking_issue_groups": 0
+    },
+    "solver": {
+      "status": "PARCIAL",
+      "solver_status": "OPTIMAL",
+      "transmissions": 402,
+      "allocated": 377,
+      "unassigned": 25,
+      "used_teachers": 222,
+      "wall_time_seconds": 5.175412900000083,
+      "diagnostics": {
+        "cp_sat_wall_time_seconds": 4.697832600000001,
+        "grasp_wall_time_seconds": 0.0,
+        "phase_1_status": "OPTIMAL",
+        "switch_1_teacher_coverage_status": "OPTIMAL",
+        "switch_2_high_capacity_status": "OPTIMAL",
+        "switch_3_scarcity_rescue_status": "OPTIMAL",
+        "canonicalization_status": "OPTIMAL",
+        "canonicalization_workers": 1,
+        "selected_solution_phase_status": "OPTIMAL",
+        "all_lexicographic_phases_optimal": true,
+        "best_used_teachers": 222,
+        "best_high_capacity_score": 3353,
+        "scarcity_rescue_penalty": 2,
+        "unique_candidate_unassigned": 2,
+        "grasp_iterations": 0,
+        "grasp_alpha": 0.25,
+        "grasp_hint_unassigned": null,
+        "grasp_hint_zero_active_teachers": null,
+        "grasp_hint_high_capacity_score": null,
+        "grasp_hint_scarcity_penalty": null,
+        "cp_sat_time_limit_seconds": null,
+        "stricto_max_disciplines_per_module": 2,
+        "capacity_model": "WEEKLY_BY_MODULE_STAGE",
+        "module_stage_order_mapping": {
+          "1ª": [
+            "PRIMEIRA_ETAPA"
+          ],
+          "2ª": [
+            "SEGUNDA_ETAPA"
+          ],
+          "ESTENDIDA": [
+            "PRIMEIRA_ETAPA",
+            "SEGUNDA_ETAPA"
+          ]
+        },
+        "assignment_variables": 2582,
+        "teacher_slot_constraints": 797,
+        "teacher_stage_slot_constraints": 797,
+        "teacher_stage_capacity_constraints": 466
+      }
+    },
+    "audit": {
+      "status": "APROVADO",
+      "checks": {
+        "transmissions": 402,
+        "teachers": 233,
+        "allocated": 377,
+        "unassigned": 25,
+        "used_teachers": 222,
+        "schedule_slots_checked": 479
+      },
+      "issue_count": 0
+    }
+  },
+  "artifacts": {
+    "source_copy": {
+      "path": "fonte\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+      "size_bytes": 145924,
+      "sha256": "48d0478f0ce58630f11e729e96fec43842e3a47fdc8f9e4c994979ea47ecd6dc"
+    },
+    "validation_report": {
+      "path": "validacao\\relatorio_validacao.json",
+      "size_bytes": 3893,
+      "sha256": "bc4336d871f2075b56decc6ae63d7e7d006974b6542941ea22c700911a94b40e"
+    },
+    "validation_issues": {
+      "path": "validacao\\inconsistencias.csv",
+      "size_bytes": 1102,
+      "sha256": "f2e4a9d1f37be26e639679acfa36a152de8d6cebcc1ec4854345dcb60c74058f"
+    },
+    "audit_report": {
+      "path": "auditoria\\auditoria_alocacao.json",
+      "size_bytes": 244,
+      "sha256": "311bb4435ab4437767dece1fcc147982167c550ad79478f9c3bcfc2224b47771"
+    },
+    "allocation_workbook": {
+      "path": "alocacao\\resultado_alocacao.xlsx",
+      "size_bytes": 88441,
+      "sha256": "ec0e5c3b7b55ba01835e554b3ef0424541ea1bd44f34d26a6f866cd95d73a8da"
+    },
+    "allocation_summary": {
+      "path": "alocacao\\resumo_alocacao.json",
+      "size_bytes": 229426,
+      "sha256": "233ab8fcbba2dea0fb7159e23d91ba864e8e4296ea1016332856a85ffeb2a114"
+    }
+  },
+  "outcome": {
+    "exit_code": 0,
+    "state": "CONCLUIDA",
+    "message": "Rodada concluída e auditada com sucesso."
+  },
+  "completed_at_utc": "2026-07-14T17:22:12.632173+00:00"
+}

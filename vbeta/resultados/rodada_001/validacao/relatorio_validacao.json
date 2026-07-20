@@ -1,0 +1,146 @@
+{
+  "source": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\vbeta\\resultados\\rodada_001\\fonte\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+  "status": "APROVADO_COM_RESSALVAS",
+  "sheets": {
+    "MAPA PEDAGÓGICO": {
+      "rows": 990,
+      "columns": 23
+    },
+    "DOCENTES": {
+      "rows": 233,
+      "columns": 8
+    }
+  },
+  "metadata": {
+    "expected_module": 52,
+    "contract_version": "2.1",
+    "validated_at_utc": "2026-07-14T17:22:06.338903+00:00",
+    "source_sha256": "48d0478f0ce58630f11e729e96fec43842e3a47fdc8f9e4c994979ea47ecd6dc",
+    "modules": [
+      52
+    ],
+    "allocating_rows": 402
+  },
+  "summary": {
+    "issue_groups": 3,
+    "blocking_issue_groups": 0,
+    "by_severity": {
+      "CRÍTICA": 0,
+      "ALTA": 1,
+      "MÉDIA": 2,
+      "BAIXA": 0
+    }
+  },
+  "assumptions": [
+    "O grão do MAPA PEDAGÓGICO é CURRÍCULO + COD_DISCIPLINA.",
+    "Perfis separados por vírgula são alternativas; basta uma interseção exata após normalizar caixa e espaços.",
+    "Somente docentes com STATUS=ATIVO estão disponíveis para cobertura.",
+    "MODELO_CONTRATO é aceito para compatibilidade estrutural, mas não é consumido; o contrato de saída deriva do docente selecionado.",
+    "Divergência ESTENDIDA entre ORDEM e METODOLOGIA é alerta até confirmação da regra de negócio.",
+    "Somente Curso Único e Curso Responsável ao vivo entram na alocação; linhas Sinérgicas são informativas."
+  ],
+  "issues": [
+    {
+      "severity": "MÉDIA",
+      "code": "CAMPO_OBRIGATORIO_VAZIO",
+      "sheet": "MAPA PEDAGÓGICO",
+      "column": "CURRÍCULO",
+      "message": "1 linha(s) sem valor obrigatório em CURRÍCULO.",
+      "blocking": false,
+      "count": 1,
+      "rows": [
+        546
+      ],
+      "details": {}
+    },
+    {
+      "severity": "MÉDIA",
+      "code": "ORDEM_METODOLOGIA_DIVERGENTE",
+      "sheet": "MAPA PEDAGÓGICO",
+      "column": "METODOLOGIA",
+      "message": "ORDEM e METODOLOGIA divergem quanto à classificação ESTENDIDA; confirmar regra de negócio.",
+      "blocking": false,
+      "count": 19,
+      "rows": [
+        28,
+        81,
+        90,
+        123,
+        142,
+        173,
+        270,
+        295,
+        402,
+        505,
+        531,
+        543,
+        665,
+        762,
+        813,
+        843,
+        878,
+        908,
+        924
+      ],
+      "details": {}
+    },
+    {
+      "severity": "ALTA",
+      "code": "PERFIL_SEM_DOCENTE_ATIVO",
+      "sheet": "MAPA PEDAGÓGICO",
+      "column": "PERFIL_DISCIPLINA",
+      "message": "11 oferta(s), em 4 perfil(is), não possuem docente ativo compatível.",
+      "blocking": false,
+      "count": 11,
+      "rows": [
+        27,
+        139,
+        141,
+        142,
+        265,
+        369,
+        518,
+        720,
+        776,
+        883,
+        884
+      ],
+      "details": {
+        "profiles_without_active_teacher": [
+          {
+            "profile": "Comunicação - Relações Públicas - Teorias em Relações Públicas",
+            "rows": [
+              776
+            ]
+          },
+          {
+            "profile": "Saúde - Comuns",
+            "rows": [
+              265,
+              720,
+              883,
+              884
+            ]
+          },
+          {
+            "profile": "Tecnologia - Desenvolvimento Mobile - Programação para Dispositivos",
+            "rows": [
+              27,
+              369
+            ]
+          },
+          {
+            "profile": "Tecnologia - Processamento de Dados - Análise de Dados",
+            "rows": [
+              139,
+              141,
+              142,
+              518
+            ]
+          }
+        ],
+        "active_profile_token_count": 111
+      }
+    }
+  ]
+}

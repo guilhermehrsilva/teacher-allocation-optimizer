@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "round": "rodada_001",
+  "created_at_utc": "2026-07-14T14:05:44.331239+00:00",
+  "config": {
+    "input_dir": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\TESTEM52\\entrada",
+    "output_dir": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\TESTEM52\\resultados",
+    "base_argument": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\TESTEM52\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+    "expected_module": 52,
+    "workers": 8,
+    "max_time_seconds": null,
+    "random_seed": 42,
+    "grasp_iterations": 0,
+    "require_optimal": true
+  },
+  "versions": {
+    "pipeline": "1.1",
+    "validation_contract": "2.0",
+    "python": "3.14.5rc1",
+    "openpyxl": "3.1.5",
+    "ortools": "9.15.6755"
+  },
+  "code_fingerprints": {
+    "pipeline": {
+      "path": "TESTEM52\\pipeline.py",
+      "sha256": "11ad7d3b71655aed84014f2d095db3ab4a190729d8993d82193c739ab6ef02d7"
+    },
+    "validation": {
+      "path": "VALIDADOR\\src\\alocacao_docente\\validation.py",
+      "sha256": "f6b7ecb3d8ef1364d8793042be3eb7a09d4b89102f54f5cc643cca0abef3d183"
+    },
+    "domain": {
+      "path": "MOTOR\\src\\motor_alocacao\\domain.py",
+      "sha256": "941f535f67a4f571873eb141305ff06fa17a1e92f2200bb5b01bfef6079f9171"
+    },
+    "eligibility": {
+      "path": "MOTOR\\src\\motor_alocacao\\eligibility.py",
+      "sha256": "a88d99f3e05da7fc9b3e2e2be5bf80b3b4cad14bc3786378f344fec4285fe385"
+    },
+    "loader": {
+      "path": "MOTOR\\src\\motor_alocacao\\loader.py",
+      "sha256": "2d1c75f8bb11a76b24edd7c2d9ef82bdbef5dd043e8ed4ab18b59f9f1fe85984"
+    },
+    "solver": {
+      "path": "MOTOR\\src\\motor_alocacao\\solver.py",
+      "sha256": "6addab2220de03188af5e0c699a0f5ac3e46d70e947e79f1d552781b0af61134"
+    },
+    "grasp": {
+      "path": "MOTOR\\src\\motor_alocacao\\grasp.py",
+      "sha256": "543e136ac345883ff2345f5c4171b36578a9316379a84313f223011b0437b1a0"
+    },
+    "audit": {
+      "path": "MOTOR\\src\\motor_alocacao\\audit.py",
+      "sha256": "555b268756d152a145bc7e09f1d4d1a1422423cf71840b16b561be3dea663a25"
+    },
+    "reporting": {
+      "path": "MOTOR\\src\\motor_alocacao\\reporting.py",
+      "sha256": "204d1dc4ebfdbe1c3fd4315c2b5ac78205ab46dfa53789b36e29c4aa5ea93b7a"
+    }
+  },
+  "source": {
+    "selection_mode": "explicita",
+    "original_path": "C:\\Users\\48960380881\\Documents\\GitHub\\FerramentaAlocação\\TESTEM52\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+    "copied_path": "fonte\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+    "filename": "BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+    "size_bytes": 145745,
+    "sha256": "5dbc22c481c36d60e7747f01d48337c3f6752e097519a0dcf77ce6892dfb9e76"
+  },
+  "phases": {
+    "validation": {
+      "status": "APROVADO_COM_RESSALVAS",
+      "source_sha256": "5dbc22c481c36d60e7747f01d48337c3f6752e097519a0dcf77ce6892dfb9e76",
+      "severity_counts": {
+        "CRÍTICA": 0,
+        "ALTA": 2,
+        "MÉDIA": 2,
+        "BAIXA": 0
+      },
+      "blocking_issue_groups": 0
+    },
+    "solver": {
+      "status": "PARCIAL",
+      "solver_status": "OPTIMAL",
+      "transmissions": 402,
+      "allocated": 363,
+      "unassigned": 39,
+      "used_teachers": 196,
+      "wall_time_seconds": 2.880018100000143,
+      "diagnostics": {
+        "cp_sat_wall_time_seconds": 2.4802686,
+        "grasp_wall_time_seconds": 0.0,
+        "phase_1_status": "OPTIMAL",
+        "switch_1_teacher_coverage_status": "OPTIMAL",
+        "switch_2_high_capacity_status": "OPTIMAL",
+        "switch_3_scarcity_rescue_status": "OPTIMAL",
+        "canonicalization_status": "OPTIMAL",
+        "canonicalization_workers": 1,
+        "selected_solution_phase_status": "OPTIMAL",
+        "all_lexicographic_phases_optimal": true,
+        "best_used_teachers": 196,
+        "best_high_capacity_score": 3256,
+        "scarcity_rescue_penalty": 5,
+        "unique_candidate_unassigned": 5,
+        "grasp_iterations": 0,
+        "grasp_alpha": 0.25,
+        "grasp_hint_unassigned": null,
+        "grasp_hint_zero_active_teachers": null,
+        "grasp_hint_high_capacity_score": null,
+        "grasp_hint_scarcity_penalty": null,
+        "cp_sat_time_limit_seconds": null,
+        "stricto_max_disciplines_per_module": 2,
+        "assignment_variables": 2080,
+        "teacher_slot_constraints": 451
+      }
+    },
+    "audit": {
+      "status": "APROVADO",
+      "checks": {
+        "transmissions": 402,
+        "teachers": 233,
+        "allocated": 363,
+        "unassigned": 39,
+        "used_teachers": 196,
+        "schedule_slots_checked": 363
+      },
+      "issue_count": 0
+    }
+  },
+  "artifacts": {
+    "source_copy": "fonte\\BASE_SINTETICA_PERFIL_DOCENTE_COMPLETO.xlsx",
+    "validation_report": "validacao\\relatorio_validacao.json",
+    "validation_issues": "validacao\\inconsistencias.csv",
+    "audit_report": "auditoria\\auditoria_alocacao.json",
+    "allocation_workbook": "alocacao\\resultado_alocacao.xlsx",
+    "allocation_summary": "alocacao\\resumo_alocacao.json"
+  },
+  "outcome": {
+    "exit_code": 0,
+    "state": "CONCLUIDA",
+    "message": "Rodada concluída e auditada com sucesso."
+  },
+  "completed_at_utc": "2026-07-14T14:05:48.147449+00:00"
+}
