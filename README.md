@@ -1,49 +1,82 @@
 ﻿# OPTIMAL
 
-Sistema de apoio à alocação docente com validação, otimização CP-SAT, auditoria e publicação de resultados.
+O OPTIMAL é uma solução completa para apoio à alocação docente, combinando validação de dados, otimização com CP-SAT, auditoria, publicação de resultados e uma interface web para acompanhamento operacional.
 
 ## Visão geral
 
-O OPTIMAL reúne uma stack completa para processar planilhas, validar regras de negócio, executar otimização combinatória e publicar resultados em uma interface web. O projeto é organizado em módulos para processamento, simulação de cenários, validação e apresentação.
+Este repositório reúne vários módulos do fluxo de alocação, incluindo:
 
-## Estrutura do projeto
-
-- pilotdev/ — componentes principais do fluxo de alocação e validação.
-- pilotdev/MOTOR/ — motor de alocação e relatórios.
-- pilotdev/OPTIMIZE/ — versão otimizada do fluxo.
-- pilotdev/scenario_engine/ — simulação de cenários.
-- pilotdev/tela/ — frontend e backend da aplicação web.
-- pilotdev/VALIDADOR/ — validação de dados e regras.
-
-## Como executar
-
-### Requisitos
-
-- Python 3.11+
-- Node.js 20+
-- Git
-
-### Início rápido
-
-`powershell
-cd pilotdev/vbeta1.0
-.
-`
-
-> Ajuste os passos de execução conforme a documentação específica de cada módulo.
+- processamento e preparo de dados;
+- validação de regras e inconsistências;
+- motores de otimização e simulação de cenários;
+- interface web para execução e análise;
+- relatórios, evidências e artefatos de homologação.
 
 ## Principais capacidades
 
-- Validação automatizada de dados e regras.
-- Otimização com CP-SAT para alocação docente.
-- Auditoria e geração de relatórios.
-- Interface web para execução e acompanhamento.
-- Módulo de cenários para simulação de políticas.
+- Validação automática de planilhas e regras de negócio.
+- Otimização combinatória para alocação docente.
+- Geração de relatórios, evidências e auditoria.
+- Simulação de cenários para análise de políticas.
+- Interface web com fluxo de execução e dashboards.
+
+## Estrutura do projeto
+
+```text
+pilotdev/
+├── MOTOR/             # motor principal de alocação
+├── OPTIMIZE/          # fluxo otimizado
+├── scenario_engine/   # simulação de cenários
+├── tela/              # frontend e backend da aplicação web
+├── VALIDADOR/         # validação e checagem de dados
+├── vbeta/             # versão experimental do pipeline
+├── vbeta1.0/          # pacote local de produção / release
+└── BASE_TESTE_AR/     # base de teste e validações
+```
+
+## Requisitos
+
+- Python 3.11+ ou 3.12+
+- Node.js 20+ para desenvolvimento da interface
+- Git
+
+## Início rápido
+
+### 1) Preparação local
+
+```powershell
+cd pilotdev/vbeta1.0
+python -m pip install -r requirements.txt
+```
+
+### 2) Execução da aplicação
+
+Consulte os READMEs específicos de cada módulo para os comandos exatos de execução. A aplicação web e os motores de processamento estão concentrados principalmente em:
+
+- [pilotdev/tela/README.md](pilotdev/tela/README.md)
+- [pilotdev/vbeta1.0/README.md](pilotdev/vbeta1.0/README.md)
+- [pilotdev/scenario_engine/README.md](pilotdev/scenario_engine/README.md)
+
+## Fluxo de uso
+
+1. Carregue uma planilha com os dados de entrada.
+2. Valide regras e resolva inconsistências.
+3. Execute o motor de otimização.
+4. Analise os resultados, relatórios e auditoria.
+5. Simule cenários e compare impactos antes de promover mudanças.
 
 ## Documentação
 
-Consulte os READMEs específicos em cada subdiretório para detalhes operacionais.
+A documentação operacional e técnica está distribuída nos READMEs e subpastas de cada módulo. Recomendamos começar pelos diretórios abaixo:
+
+- [pilotdev/vbeta1.0/README.md](pilotdev/vbeta1.0/README.md)
+- [pilotdev/tela/README.md](pilotdev/tela/README.md)
+- [pilotdev/scenario_engine/README.md](pilotdev/scenario_engine/README.md)
+
+## Status do projeto
+
+Este repositório representa um projeto de engenharia em evolução, com múltiplos módulos e versões experimentais, sendo mantido para fins de organização, rastreio e compartilhamento do trabalho.
 
 ## Licença
 
-Este projeto é distribuído sob os termos da licença definida pelo repositório.
+A definição de licença deste repositório deve ser ajustada conforme a política institucional ou o contexto de uso do projeto.
