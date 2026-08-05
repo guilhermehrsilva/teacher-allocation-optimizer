@@ -1,82 +1,68 @@
-﻿# OPTIMAL
+# Teacher Allocation Optimizer
 
-O OPTIMAL é uma solução completa para apoio à alocação docente, combinando validação de dados, otimização com CP-SAT, auditoria, publicação de resultados e uma interface web para acompanhamento operacional.
+**How to optimally assign hundreds of teachers to courses while respecting eligibility rules, workload limits, and institutional constraints?**
 
-## Visão geral
+Full-stack optimization system that automates teacher-to-course allocation using CP-SAT (Constraint Programming), with data validation, audit trails, scenario simulation, and a web dashboard for operational monitoring.
 
-Este repositório reúne vários módulos do fluxo de alocação, incluindo:
+## Key Highlights
 
-- processamento e preparo de dados;
-- validação de regras e inconsistências;
-- motores de otimização e simulação de cenários;
-- interface web para execução e análise;
-- relatórios, evidências e artefatos de homologação.
+| Feature | Detail |
+|---------|--------|
+| Solver | Google OR-Tools CP-SAT |
+| Approach | Constraint programming + GRASP metaheuristic |
+| Validation | Automated rule checking with inconsistency reports |
+| Scenarios | What-if policy simulations for decision support |
+| Interface | React + FastAPI web dashboard |
+| Audit | Full traceability per allocation round |
 
-## Principais capacidades
+## Stack
 
-- Validação automática de planilhas e regras de negócio.
-- Otimização combinatória para alocação docente.
-- Geração de relatórios, evidências e auditoria.
-- Simulação de cenários para análise de políticas.
-- Interface web com fluxo de execução e dashboards.
+`Python` · `OR-Tools (CP-SAT)` · `FastAPI` · `React` · `TypeScript` · `Vite` · `Pandas` · `SQLite`
 
-## Estrutura do projeto
+## Architecture
 
-```text
-pilotdev/
-├── MOTOR/             # motor principal de alocação
-├── OPTIMIZE/          # fluxo otimizado
-├── scenario_engine/   # simulação de cenários
-├── tela/              # frontend e backend da aplicação web
-├── VALIDADOR/         # validação e checagem de dados
-├── vbeta/             # versão experimental do pipeline
-├── vbeta1.0/          # pacote local de produção / release
-└── BASE_TESTE_AR/     # base de teste e validações
+```
+├── MOTOR/                  # Core allocation engine (CP-SAT solver)
+│   ├── src/motor_alocacao/ # Domain, solver, eligibility, audit, reporting
+│   └── tests/              # Unit tests
+├── VALIDADOR/              # Data validation module
+├── scenario_engine/        # What-if scenario simulator
+├── tela/                   # Web interface (prototype)
+│   ├── backend/            # FastAPI API
+│   └── frontend/           # React + TypeScript
+├── vbeta1.0/               # Production release package
+│   ├── engines/            # Primary + scenario engines
+│   ├── backend/            # API with auth & coordination
+│   ├── frontend/           # Built React app
+│   ├── docs/               # Full documentation (10 chapters)
+│   └── scripts/            # Install, test, release tools
+└── BASES/                  # Input spreadsheets
 ```
 
-## Requisitos
+## How It Works
 
-- Python 3.11+ ou 3.12+
-- Node.js 20+ para desenvolvimento da interface
-- Git
+1. **Upload** — Institutional spreadsheet with teachers, courses, and constraints
+2. **Validate** — Automated rule-checking flags inconsistencies before solving
+3. **Optimize** — CP-SAT solver finds optimal teacher-course assignments
+4. **Audit** — Every round generates traceability reports (JSON + XLSX)
+5. **Simulate** — Run alternative scenarios to compare policy impacts
+6. **Monitor** — Web dashboard tracks execution and results
 
-## Início rápido
+## How to Run
 
-### 1) Preparação local
-
-```powershell
-cd pilotdev/vbeta1.0
-python -m pip install -r requirements.txt
+```bash
+git clone https://github.com/guilhermehrsilva/teacher-allocation-optimizer.git
+cd teacher-allocation-optimizer/vbeta1.0
+pip install -r requirements.txt
+python executar.py
 ```
 
-### 2) Execução da aplicação
+### Web Interface
 
-Consulte os READMEs específicos de cada módulo para os comandos exatos de execução. A aplicação web e os motores de processamento estão concentrados principalmente em:
+```bash
+# Backend
+cd vbeta1.0/backend && pip install -r requirements.txt && python run.py
 
-- [pilotdev/tela/README.md](pilotdev/tela/README.md)
-- [pilotdev/vbeta1.0/README.md](pilotdev/vbeta1.0/README.md)
-- [pilotdev/scenario_engine/README.md](pilotdev/scenario_engine/README.md)
-
-## Fluxo de uso
-
-1. Carregue uma planilha com os dados de entrada.
-2. Valide regras e resolva inconsistências.
-3. Execute o motor de otimização.
-4. Analise os resultados, relatórios e auditoria.
-5. Simule cenários e compare impactos antes de promover mudanças.
-
-## Documentação
-
-A documentação operacional e técnica está distribuída nos READMEs e subpastas de cada módulo. Recomendamos começar pelos diretórios abaixo:
-
-- [pilotdev/vbeta1.0/README.md](pilotdev/vbeta1.0/README.md)
-- [pilotdev/tela/README.md](pilotdev/tela/README.md)
-- [pilotdev/scenario_engine/README.md](pilotdev/scenario_engine/README.md)
-
-## Status do projeto
-
-Este repositório representa um projeto de engenharia em evolução, com múltiplos módulos e versões experimentais, sendo mantido para fins de organização, rastreio e compartilhamento do trabalho.
-
-## Licença
-
-A definição de licença deste repositório deve ser ajustada conforme a política institucional ou o contexto de uso do projeto.
+# Frontend
+cd vbeta1.0/frontend && npm install && npm run dev
+```
