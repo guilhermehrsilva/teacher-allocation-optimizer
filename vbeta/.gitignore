@@ -1,8 +1,0 @@
-__pycache__/
-*.py[cod]
-tests/.audit-*
-tests/.loader-*
-tests/.pipeline-*
-tests/.reporting-*
-entrada/*.xlsx
-entrada/~$*.xlsx
