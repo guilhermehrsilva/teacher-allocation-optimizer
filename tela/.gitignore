@@ -1,9 +1,0 @@
-data/
-.tools/
-frontend/node_modules/
-frontend/dist/
-frontend/*.tsbuildinfo
-backend/.pytest_cache/
-backend/tests/tmp*/
-**/__pycache__/
-*.pyc
