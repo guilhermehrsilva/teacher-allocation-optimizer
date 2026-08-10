@@ -23,11 +23,11 @@ Full-stack optimization system that automates teacher-to-course allocation using
 
 ```
 ├── vbeta1.0/               # Production release package
-│   ├── engines/            # Primary + scenario engines
-│   ├── backend/            # API with auth & coordination
-│   ├── frontend/           # Built React app
-│   ├── docs/               # Full documentation (10 chapters)
-│   └── scripts/            # Install, test, release tools
+   ├── engines/            # Primary + scenario engines
+   ├── backend/            # API with auth & coordination
+   ├── frontend/           # Built React app
+   ├── docs/               # Full documentation (10 chapters)
+   └── scripts/            # Install, test, release tools
 
 ```
 
