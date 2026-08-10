@@ -22,21 +22,13 @@ Full-stack optimization system that automates teacher-to-course allocation using
 ## Architecture
 
 ```
-├── MOTOR/                  # Core allocation engine (CP-SAT solver)
-│   ├── src/motor_alocacao/ # Domain, solver, eligibility, audit, reporting
-│   └── tests/              # Unit tests
-├── VALIDADOR/              # Data validation module
-├── scenario_engine/        # What-if scenario simulator
-├── tela/                   # Web interface (prototype)
-│   ├── backend/            # FastAPI API
-│   └── frontend/           # React + TypeScript
 ├── vbeta1.0/               # Production release package
 │   ├── engines/            # Primary + scenario engines
 │   ├── backend/            # API with auth & coordination
 │   ├── frontend/           # Built React app
 │   ├── docs/               # Full documentation (10 chapters)
 │   └── scripts/            # Install, test, release tools
-└── BASES/                  # Input spreadsheets
+
 ```
 
 ## How It Works
